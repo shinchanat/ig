@@ -11,5 +11,5 @@ developing...
     
 The above code in squig can we written as follows. 
    
-    age = i{"Enter your name : "}
+    age = i{"Enter your age : "}
     {age}
