@@ -9,7 +9,7 @@ developing...
     age = int(input("Enter your age :"))
     print(age)
     
-The above code in squig can we written as follows. 
+The above python code can be written in squig as follows. 
    
     age = i{"Enter your age : "}
     {age}
