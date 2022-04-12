@@ -15,4 +15,4 @@ The above python code can be written in squig as follows.
     {age}
     
 # Example :
- ![]
+ ![](20220412_184756.png)
