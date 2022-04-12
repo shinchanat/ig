@@ -1,6 +1,6 @@
 # squig
 
-A programming language syntactically similar to python & provides core functions.
+A programming language syntactically similar to python & which provides core functions.
 
 developing...
 
