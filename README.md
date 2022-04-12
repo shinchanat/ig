@@ -13,3 +13,6 @@ The above python code can be written in squig as follows.
    
     age = i{"Enter your age : "}
     {age}
+    
+# Example :
+ ![]
