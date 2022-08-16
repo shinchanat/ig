@@ -20,84 +20,87 @@
    * CollectionType
    * BoolType
 
-   ## NumberType :
+## NumberType :
 		
-		* All real number are valid in squig and represented as NumberType.
+   * All real number are valid in squig and represented as NumberType.
 		
+
+## StringType :
 		
-   ## StringType :
-		
-		* As like in other programming languages anything that's enclosed within double quotes is considered as StringType.
-		* We don't have CharacterType in Squig.
+   * As like in other programming languages anything that's enclosed 
+     within double quotes is considered as StringType.
+     
+   * We don't have CharacterType in Squig.
 		
 ## InputStringType : 
 	
-		* We have a new type in squig and that is called InputStringType. It's very similar to StringType , anything that's enclosed within
-		  a single quotes is considered as InputStringType.
+   * We have a new type in squig and that is called InputStringType. 
+     It's very similar to StringType , anything that's enclosed within
+     a single quotes is considered as InputStringType.
 		  
-		* As the name suggests it's function is to get the input from the user.
+   * As the name suggests it's function is to get the input from the user.
 		
 ### Example :
 		
-			name : 'Enter your name : '
+	name : 'Enter your name : '
 			
-			{ "Welcome " + name }
+	{ "Welcome " + name }
 			
 ### Output : 
 			
-			Enter your name : Shinchan
-			Welcome Shinchan
+	Enter your name : Shinchan
+	Welcome Shinchan
 		
 		
 ## CollectionType :
 		
-		* CollectionType is same as python's list.
+    * CollectionType is same as python's list.
 		
 ## BoolType :
 	
-		* BoolType represents 'true' or 'false'
+    * BoolType represents 'true' or 'false'
 		
 
 # Print statement : 
 
-	* We can directly print stuffs on the screen.
+    * We can directly print stuffs on the screen.
 	
 ## Syntax  :
 	
-		{ value }
+	{ value }
 	
 ## Example :
 	
-		Squig > { " Hello world " }
+	Squig > { " Hello world " }
 	
-	* This displays Hello world on the screen.
-	* '{' and '}' are optional as of now.
+    * This displays Hello world on the screen.
+    * '{' and '}' are optional as of now.
 	
 
 # Variables in Squig : 
 
-	* Variable named by the following rule .
+    * Variable named by the following rule .
 		
 		1.) Variable must start with an underscore or letter
 		2.) Variable are case sensitive.
 		3.) Variable can contain digits.
 		
-	* The same rule followed in other programming Languages.
+    * The same rule followed in other programming Languages.
 	
 	
 # Assignment statement :
 
-	* Instead of using a equal(=) we use colon(:) for assigning values to variables.
+    * Instead of using a equal(=) we use colon(:) for assigning values to variables.
 	
 ## Syntax:
 	
-		variable : value
+	variable : value
 	
 ## Example :
 		
-		Squig > variable : " Hello world " 
+	Squig > variable : " Hello world " 
 		
-	* And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
+     * And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
 	
 # Input Statement : 
 
