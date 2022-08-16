@@ -14,11 +14,11 @@
 	
 # Squig datatypes : 
 	
-	* NumberType 
-	* StringType
-	* InputStringType
-	* CollectionType
-	* BoolType
+   * NumberType 
+   * StringType
+   * InputStringType
+   * CollectionType
+   * BoolType
 
    ## NumberType :
 		
