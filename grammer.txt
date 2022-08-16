@@ -1,0 +1,34 @@
+expression : VARIABLE COLON expression
+	   : LBRE comp-expression  RBRE
+	   : comp-expression
+           
+comp-expression : relational-expression ((AND|OR) relational-expression)*
+
+relational-expression : NOT relational-expression
+                      :arithmatic-expression ((L|G|LE|GE|NE|E) arithmatic-expression)*
+	   
+arithmatic-expression : term ((PLUS|MINUS) term)*
+
+term   : factor ((MUL|DIVIDE) factor)*
+
+factor : (PLUS|MINUS) factor
+       : power
+
+power  : call (POW factor)*
+
+call : atom (LBRE (expression(COMMA expression)*)? RBRE)?
+
+atom : INT|FLOAT|VRIABLE|STRING|INPUTSTRING
+     : LPAREN expression RPAREN
+     : if-expression
+     : function-expression
+     : collection-expression
+
+collection-expression : LBRE LBRE(expression (COMMA expression)*)? RBRE RBRE
+
+if-expression : IF expression COLON expression 
+               (ELIF expression COLON expression)*
+               (ELSE COLON expression)?
+
+function-expression : FUNCTION VARIABLE LBRE (VARIABLE(COMMA VARIABLE)*)?) RBRE COLON  expression
+
