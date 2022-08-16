@@ -1,10 +1,10 @@
-#Documentation :
+# Documentation :
 
 	* Squig is a basic interpreted , dynamic toy programming language developed in python v3.10.5 and currently in beta state .
 	* Since it's not compiled into an excutable it requires python 3.
 	* It's syntax is similar to python.
 	
-#Limitations:
+# Limitations:
 
 	* It's slow due to python implementation . But still it can run as fast as python.
 	* Everything is global.
@@ -12,7 +12,7 @@
 	* Does'nt contains any kind of built-in function.
 	* Multiline statements can'nt be used.
 	
-#Squig datatypes : 
+# Squig datatypes : 
 	
 	* NumberType 
 	* StringType
@@ -20,53 +20,53 @@
 	* CollectionType
 	* BoolType
 
-	##NumberType :
+	## NumberType :
 		
 		* All real number are valid in squig and represented as NumberType.
 		
 		
-	##StringType :
+	## StringType :
 		
 		* As like in other programming languages anything that's enclosed within double quotes is considered as StringType.
 		* We don't have CharacterType in Squig.
 		
-	##InputStringType : 
+	## InputStringType : 
 	
 		* We have a new type in squig and that is called InputStringType. It's very similar to StringType , anything that's enclosed within
 		  a single quotes is considered as InputStringType.
 		  
 		* As the name suggests it's function is to get the input from the user.
 		
-		###Example :
+		### Example :
 		
 			name : 'Enter your name : '
 			
 			{ "Welcome " + name }
 			
-		###Output : 
+		### Output : 
 			
 			Enter your name : Shinchan
 			Welcome Shinchan
 		
 		
-	##CollectionType :
+	## CollectionType :
 		
 		* CollectionType is same as python's list.
 		
-	##BoolType :
+	## BoolType :
 	
 		* BoolType represents 'true' or 'false'
 		
 
-#Print statement : 
+# Print statement : 
 
 	* We can directly print stuffs on the screen.
 	
-	##Syntax  :
+	## Syntax  :
 	
 		{ value }
 	
-	##Example :
+	## Example :
 	
 		Squig > { " Hello world " }
 	
@@ -74,7 +74,7 @@
 	* '{' and '}' are optional as of now.
 	
 
-#Variables in Squig : 
+# Variables in Squig : 
 
 	* Variable named by the following rule .
 		
@@ -85,45 +85,45 @@
 	* The same rule followed in other programming Languages.
 	
 	
-#Assignment statement :
+# Assignment statement :
 
 	* Instead of using a equal(=) we use colon(:) for assigning values to variables.
 	
-	##Syntax:
+	## Syntax:
 	
 		variable : value
 	
-	##Example :
+	## Example :
 		
 		Squig > variable : " Hello world " 
 		
 	* And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
 	
-#Input Statement : 
+# Input Statement : 
 
 	* To get input from the user we use the InputStringType.
 	
-	##Syntax:
+	## Syntax:
 		
 		' Message ' --> input statement (or) input string type
 	
-	##Example :
+	## Example :
 		
 		Squig > variable : 'Enter your name : '
 		
 		Squig > { "Welcome " + variable }
 		
-#If-elif-else statements :
+# If-elif-else statements :
 
 	* Decision making statement is similar to python if-elif-else but one expection we must added '{','}'
 	
-	##Syntax:
+	## Syntax:
 		
 		if { condition } : true-block else : false-block
 		
 		if {condition} : if-block elif {condition} : elif-block else : else-block
 	
-	##Example :
+	## Example :
 		
 		Squig > if { 'Enter a value : ' == 100 } : "True" else : "False"
 		
@@ -131,16 +131,16 @@
 
 		Squig > if { name == "shinchan" } : "it's a cartoon " elif { name == "Yoen woo jin" } : "Welcome " + name else : "None"
 	
-#For statement : 
+# For statement : 
 
 	* Squig supports only one looping statement and that's for loop.
 	
-	##Syntax:
+	## Syntax:
 		
 		for iter_val{start_value , end_value ,step_value } : for-statement-body
 		
 	
-	##Example : 
+	## Example : 
 	
 		Squig > for x{10} : {x} --> displays from 0 to 9 on screen
 		
@@ -149,21 +149,21 @@
 		Squig > for x{1,10,2} : {x} --> displays from 1 to 10 increments the iteration by 2.
 		
 		
-#Function statement : 
+# Function statement : 
 
 	* As like in other programming languages we can declare function in squig using the 'function' keyword.
 	* Default arguments are not supported.
 	
-	##Syntax :
+	## Syntax :
 	
 		function_name function { parameter-1 , parameter-2, ... parameter-n} : function-body
 	
-	##Example :
+	## Example :
 	
 		Squig > patter function {size} : for x{1,size+1} : "* "*x
 		Squig > patter{5}
 		
-	##output : 
+	## output : 
 	
 		*
 		* *
@@ -171,15 +171,15 @@
 		* * * * 
 		* * * * *
 		
-#Collection statement : 
+# Collection statement : 
 
 	* It's similar to pythons list.
 	
-		##Syntax:
+		## Syntax:
 			
 			[element1,element2,...,element-n]
 			
-		##Example : 
+		## Example : 
 		
 			Squig > name : ["shinchan","Doraemon"]
 			Squig > {name}
@@ -187,7 +187,7 @@
 		
 	* We can access elements from the collecction by using it's index.
 	
-		#Example : 
+		# Example : 
 			
 			Squig > name[0]
 			
@@ -198,7 +198,7 @@
 			
 	* As like other variables we can assign values to the individual collection elements
 		
-		#Example : 
+		# Example : 
 		
 			Squig > name[0]  : "Harish"
 			
