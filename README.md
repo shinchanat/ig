@@ -20,7 +20,7 @@
 	* CollectionType
 	* BoolType
 
-	## NumberType :
+   ## NumberType :
 		
 		* All real number are valid in squig and represented as NumberType.
 		
