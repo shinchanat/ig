@@ -13,12 +13,11 @@
    
 # Challenge :
 
-  *Since python is used in the back end it will be more difficult to get the control of the hardware system. 
+  * Since python is used in the back end it will be more difficult to get the control of the hardware system. 
   
   
-# Limitations:
+# Current Limitations :
 
-   * It's slow due to python implementation . But still it can run as fast as python.
    * Everything is global.
    * Squig can'nt handle Errors.
    * No built-in function.
@@ -213,13 +212,13 @@
 	Squig > name : [1,2,[0,9]]
 	Squig > name[-1][-1]
 			
-	* As like other variables we can assign values to the individual collection elements
+  * As like other variables we can assign values to the individual collection elements
 		
-		# Example : 
+# Example : 
 		
-			Squig > name[0]  : "Harish"
+	Squig > name[0]  : "Harish"
 			
-		* Assigning values to a nested list is not supported as of now.
+* Assigning values to a nested list is not supported as of now.
 		
 			
 			
