@@ -1,29 +1,29 @@
 # SQUIG PROGRAMMING LANGUAGE v0.0.1
 
-# Documentation :
+## Documentation :
 
   * Squig is a basic interpreted , dynamic programming language developed in python v3.10.5 and currently in beta state.
   * It's syntax is similar to python.
   
 ### Note : Squig is not ready for use.
 
-# Goal of Squig:
+## Goal of Squig:
 
    * User should able to control the hardware of the computer in a simple way.
    
-# Challenge :
+## Challenge :
 
   * Since python is used in the back end it will be more difficult to get the control of the hardware system. 
   
   
-# Current Limitations :
+## Current Limitations :
 
    * Everything is global.
    * Squig can'nt handle Errors.
    * No built-in function.
    * Multiline statements can'nt be used.
 	
-# Squig datatypes : 
+## Squig datatypes : 
 	
    * NumberType 
    * StringType
@@ -73,7 +73,7 @@
   * BoolType represents 'true' or 'false'
 		
 
-# Print statement : 
+## Print statement : 
 
   * We can directly print stuffs on the screen just by enclosing the value with '{' and '}'.
 	
@@ -89,7 +89,7 @@
   * '{' and '}' are optional as of now.
 	
 
-# Variables in Squig : 
+## Variables in Squig : 
 
   * Variable named by the following rule .
 		
@@ -102,7 +102,7 @@
   * The same rule followed in other programming Languages.
 	
 	
-# Assignment statement :
+## Assignment statement :
 
   * Instead of using a equal(=) we use colon(:) for assigning values to variables.
 	
@@ -116,7 +116,7 @@
 		
    * And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
 	
-# Input Statement : 
+## Input Statement : 
 
    * To get input from the user we use the InputStringType.
 	
@@ -130,7 +130,7 @@
 		
 	Squig > { "Welcome " + variable }
 		
-# If-elif-else statements :
+## If-elif-else statements :
 
   * Decision making statement is similar to python if-elif-else but one expection we must added '{','}'
 	
@@ -148,7 +148,7 @@
 
 	Squig > if { name == "shinchan" } : "it's a cartoon " elif { name == "Yoen woo jin" } : "Welcome " + name else : "None"
 	
-# For statement : 
+## For statement : 
 
   * Squig supports only one looping statement and that's for loop.
 	
@@ -166,7 +166,7 @@
 	Squig > for x{1,10,2} : {x} --> displays from 1 to 10 increments the iteration by 2.
 		
 		
-# Function statement : 
+## Function statement : 
 
   * As like in other programming languages we can declare function in squig using the 'function' keyword.
   * Default arguments are not supported.
@@ -188,7 +188,7 @@
 	* * * * 
 	* * * * *
 		
-# Collection statement : 
+## Collection statement : 
 
    * It's similar to pythons list.
 	
@@ -204,7 +204,7 @@
 		
   * We can access elements from the collecction by using it's index.
 	
-# Example : 
+## Example : 
 			
 	Squig > name[0]
 			
@@ -215,7 +215,7 @@
 			
   * As like other variables we can assign values to the individual collection elements
 		
-# Example : 
+## Example : 
 		
 	Squig > name[0]  : "Harish"
 			
