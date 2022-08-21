@@ -145,8 +145,6 @@
 	Squig > if { 'Enter a value : ' == 100 } : "True" else : "False"
 		
 	Squig > name : "Yoen woo jin"
-
-	Squig > if { name == "shinchan" } : "it's a cartoon " elif { name == "Yoen woo jin" } : "Welcome " + name else : "None"
 	
 ## For statement : 
 
@@ -221,13 +219,3 @@
 			
 * Assigning values to a nested list is not supported as of now.
 		
-			
-			
-		
-		
-		
-		
-	
-			
-			
-	
