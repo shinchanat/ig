@@ -75,7 +75,7 @@
 
 # Print statement : 
 
-  * We can directly print stuffs on the screen.
+  * We can directly print stuffs on the screen just by enclosing the value with '{' and '}'.
 	
 ## Syntax  :
 	
