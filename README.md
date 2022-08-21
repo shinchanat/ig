@@ -176,8 +176,8 @@
 	
 ## Example :
 	
-	Squig > patter function {size} : for x{1,size+1} : "* "*x
-	Squig > patter{5}
+	Squig > pattern function {size} : for x{1,size+1} : "* "*x
+	Squig > pattern{5}
 		
 ## output : 
 	
