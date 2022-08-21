@@ -19,6 +19,7 @@
 ## Current Limitations :
 
    * Everything is global.
+   * Can not assign values to nested collections.
    * Squig can'nt handle Errors.
    * No built-in function.
    * Multiline statements can'nt be used.
