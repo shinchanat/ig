@@ -142,10 +142,10 @@
 	if {condition} : if-block elif {condition} : elif-block else : else-block
 	
 ## Example :
+
+        Squig > name : "Yoen woo jin"
 		
-	Squig > if { 'Enter a value : ' == 100 } : "True" else : "False"
-		
-	Squig > name : "Yoen woo jin"
+	Squig > if { 'Enter a name : ' == name } : "True" else : "False"
 	
 ## For statement : 
 
