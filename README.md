@@ -46,10 +46,11 @@
 ## InputStringType : 
 	
    * Squig has a new datatype called InputStringType. 
-     It's very similar to StringType , anything that's enclosed within
-     a single quotes is considered as InputStringType.
+     It's very similar to StringType.
 		  
-   * As the name suggests it's function is to get the input from the user.
+   * As the name suggests it is the input statement in squig.
+   
+   * Anything enclosed with in singel quotes are called InputStringType.
 		
 ### Example :
 		
