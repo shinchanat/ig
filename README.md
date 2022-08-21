@@ -45,7 +45,7 @@
 		
 ## InputStringType : 
 	
-   * We have a new type in squig and that is called InputStringType. 
+   * Squig has a new datatype called InputStringType. 
      It's very similar to StringType , anything that's enclosed within
      a single quotes is considered as InputStringType.
 		  
