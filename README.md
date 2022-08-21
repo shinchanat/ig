@@ -1,16 +1,28 @@
+# SQUIG PROGRAMMING LANGUAGE v0.0.1
+
 # Documentation :
 
-	* Squig is a basic interpreted , dynamic toy programming language developed in python v3.10.5 and currently in beta state .
-	* Since it's not compiled into an excutable it requires python 3.
-	* It's syntax is similar to python.
-	
+  * Squig is a basic interpreted , dynamic programming language developed in python v3.10.5 and currently in beta state.
+  * It's syntax is similar to python.
+  
+### Note : Squig is not ready for use.
+
+# Goal of Squig:
+
+   * User should able to control the hardware of the computer in a simple way.
+   
+# Challenge :
+
+  *Since python is used in the back end it will be more difficult to get the control of the hardware system. 
+  
+  
 # Limitations:
 
-	* It's slow due to python implementation . But still it can run as fast as python.
-	* Everything is global.
-	* Squig can'nt handle Errors.
-	* Does'nt contains any kind of built-in function.
-	* Multiline statements can'nt be used.
+   * It's slow due to python implementation . But still it can run as fast as python.
+   * Everything is global.
+   * Squig can'nt handle Errors.
+   * No built-in function.
+   * Multiline statements can'nt be used.
 	
 # Squig datatypes : 
 	
@@ -54,16 +66,16 @@
 		
 ## CollectionType :
 		
-    * CollectionType is same as python's list.
+  * CollectionType is same as python's list.
 		
 ## BoolType :
 	
-    * BoolType represents 'true' or 'false'
+  * BoolType represents 'true' or 'false'
 		
 
 # Print statement : 
 
-    * We can directly print stuffs on the screen.
+  * We can directly print stuffs on the screen.
 	
 ## Syntax  :
 	
@@ -73,24 +85,26 @@
 	
 	Squig > { " Hello world " }
 	
-    * This displays Hello world on the screen.
-    * '{' and '}' are optional as of now.
+  * This displays Hello world on the screen.
+  * '{' and '}' are optional as of now.
 	
 
 # Variables in Squig : 
 
-    * Variable named by the following rule .
+  * Variable named by the following rule .
 		
-		1.) Variable must start with an underscore or letter
-		2.) Variable are case sensitive.
-		3.) Variable can contain digits.
+    1.) Variable must start with an underscore or letter
+    
+    2.) Variable are case sensitive.
+    
+    3.) Variable can contain digits.
 		
-    * The same rule followed in other programming Languages.
+  * The same rule followed in other programming Languages.
 	
 	
 # Assignment statement :
 
-    * Instead of using a equal(=) we use colon(:) for assigning values to variables.
+  * Instead of using a equal(=) we use colon(:) for assigning values to variables.
 	
 ## Syntax:
 	
@@ -100,104 +114,104 @@
 		
 	Squig > variable : " Hello world " 
 		
-     * And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
+   * And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
 	
 # Input Statement : 
 
-	* To get input from the user we use the InputStringType.
+   * To get input from the user we use the InputStringType.
 	
 ## Syntax:
 		
-		' Message ' --> input statement (or) input string type
+	' Message ' --> input statement (or) input string type
 	
 ## Example :
 		
-		Squig > variable : 'Enter your name : '
+	Squig > variable : 'Enter your name : '
 		
-		Squig > { "Welcome " + variable }
+	Squig > { "Welcome " + variable }
 		
 # If-elif-else statements :
 
-	* Decision making statement is similar to python if-elif-else but one expection we must added '{','}'
+  * Decision making statement is similar to python if-elif-else but one expection we must added '{','}'
 	
 ## Syntax:
 		
-		if { condition } : true-block else : false-block
+	if { condition } : true-block else : false-block
 		
-		if {condition} : if-block elif {condition} : elif-block else : else-block
+	if {condition} : if-block elif {condition} : elif-block else : else-block
 	
 ## Example :
 		
-		Squig > if { 'Enter a value : ' == 100 } : "True" else : "False"
+	Squig > if { 'Enter a value : ' == 100 } : "True" else : "False"
 		
-		Squig > name : "Yoen woo jin"
+	Squig > name : "Yoen woo jin"
 
-		Squig > if { name == "shinchan" } : "it's a cartoon " elif { name == "Yoen woo jin" } : "Welcome " + name else : "None"
+	Squig > if { name == "shinchan" } : "it's a cartoon " elif { name == "Yoen woo jin" } : "Welcome " + name else : "None"
 	
 # For statement : 
 
-	* Squig supports only one looping statement and that's for loop.
+  * Squig supports only one looping statement and that's for loop.
 	
 ## Syntax:
 		
-		for iter_val{start_value , end_value ,step_value } : for-statement-body
+	for iter_val{start_value , end_value ,step_value } : for-statement-body
 		
 	
 ## Example : 
 	
-		Squig > for x{10} : {x} --> displays from 0 to 9 on screen
+	Squig > for x{10} : {x} --> displays from 0 to 9 on screen
 		
-		Squig > for x{1,10} : {x} --> displays from 1 to 9 on screen
+	Squig > for x{1,10} : {x} --> displays from 1 to 9 on screen
 		
-		Squig > for x{1,10,2} : {x} --> displays from 1 to 10 increments the iteration by 2.
+	Squig > for x{1,10,2} : {x} --> displays from 1 to 10 increments the iteration by 2.
 		
 		
 # Function statement : 
 
-	* As like in other programming languages we can declare function in squig using the 'function' keyword.
-	* Default arguments are not supported.
+  * As like in other programming languages we can declare function in squig using the 'function' keyword.
+  * Default arguments are not supported.
 	
 ## Syntax :
 	
-		function_name function { parameter-1 , parameter-2, ... parameter-n} : function-body
+	function_name function { parameter-1 , parameter-2, ... parameter-n} : function-body
 	
 ## Example :
 	
-		Squig > patter function {size} : for x{1,size+1} : "* "*x
-		Squig > patter{5}
+	Squig > patter function {size} : for x{1,size+1} : "* "*x
+	Squig > patter{5}
 		
 ## output : 
 	
-		*
-		* *
-		* * *
-		* * * * 
-		* * * * *
+	*
+	* *
+	* * *
+	* * * * 
+	* * * * *
 		
 # Collection statement : 
 
-	* It's similar to pythons list.
+   * It's similar to pythons list.
 	
 ## Syntax:
 			
-			[element1,element2,...,element-n]
+	[element1,element2,...,element-n]
 			
 ## Example : 
 		
-			Squig > name : ["shinchan","Doraemon"]
-			Squig > {name}
+	Squig > name : ["shinchan","Doraemon"]
+	Squig > {name}
 		
 		
-	* We can access elements from the collecction by using it's index.
+  * We can access elements from the collecction by using it's index.
 	
 # Example : 
 			
-			Squig > name[0]
+	Squig > name[0]
 			
-		* Accessing values from nested collection if as follows.
+  * Accessing values from nested collection if as follows.
 		
-			Squig > name : [1,2,[0,9]]
-			Squig > name[-1][-1]
+	Squig > name : [1,2,[0,9]]
+	Squig > name[-1][-1]
 			
 	* As like other variables we can assign values to the individual collection elements
 		
