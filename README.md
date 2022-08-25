@@ -84,7 +84,7 @@
 	
 ## Example :
 	
-	Squig > { " Hello world " }
+	{ " Hello world " }
 	
   * This displays Hello world on the screen.
   * '{' and '}' are optional as of now.
@@ -113,7 +113,7 @@
 	
 ## Example :
 		
-	Squig > variable : " Hello world " 
+        variable : " Hello world " 
 		
    * And it's the only assignment statement available in squig . Shorthan hand operators will be included in the upcoming future.
 	
@@ -127,9 +127,9 @@
 	
 ## Example :
 		
-	Squig > variable : 'Enter your name : '
+	variable : 'Enter your name : '
 		
-	Squig > { "Welcome " + variable }
+	{ "Welcome " + variable }
 		
 ## If-elif-else statements :
 
@@ -143,9 +143,9 @@
 	
 ## Example :
 
-        Squig > name : "Yoen woo jin"
+        name : "Yoen woo jin"
 		
-	Squig > if { 'Enter a name : ' == name } : "True" else : "False"
+	if { 'Enter a name : ' == name } : "True" else : "False"
 	
 ## For statement : 
 
@@ -158,11 +158,11 @@
 	
 ## Example : 
 	
-	Squig > for x{10} : {x} --> displays from 0 to 9 on screen
+	for x{10} : {x} --> displays from 0 to 9 on screen
 		
-	Squig > for x{1,10} : {x} --> displays from 1 to 9 on screen
+	for x{1,10} : {x} --> displays from 1 to 9 on screen
 		
-	Squig > for x{1,10,2} : {x} --> displays from 1 to 10 increments the iteration by 2.
+	for x{1,10,2} : {x} --> displays from 1 to 10 increments the iteration by 2.
 		
 		
 ## Function statement : 
@@ -176,8 +176,8 @@
 	
 ## Example :
 	
-	Squig > pattern function {size} : for x{1,size+1} : "* "*x
-	Squig > pattern{5}
+	pattern function {size} : for x{1,size+1} : "* "*x
+	pattern{5}
 		
 ## output : 
 	
@@ -197,26 +197,26 @@
 			
 ## Example : 
 		
-	Squig > name : ["shinchan","Doraemon"]
-	Squig > {name}
+	name : ["shinchan","Doraemon"]
+	{name}
 		
 		
   * We can access elements from the collecction by using it's index.
 	
 ## Example : 
 			
-	Squig > name[0]
+	name[0]
 			
   * Accessing values from nested collection if as follows.
 		
-	Squig > name : [1,2,[0,9]]
-	Squig > name[-1][-1]
+	name : [1,2,[0,9]]
+	name[-1][-1]
 			
   * As like other variables we can assign values to the individual collection elements
 		
 ## Example : 
 		
-	Squig > name[0]  : "Harish"
+	name[0]  : "Harish"
 			
 * Assigning values to a nested list is not supported as of now.
 		
